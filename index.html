@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        /* PC版のスタイル */
+        @media (min-width: 768px) {
+            .mobile-content {
+                display: none;
+            }
+
+            .pc-content {
+                display: flex;
+            }
+
+            .pc-content .left-content {
+                flex: 1;
+            }
+
+            .pc-content .right-content {
+                flex: 1;
+            }
+
+            .right-content figure img {
+              margin-top: 150px; /* fig1-1を下に150px移動 */
+            }
+
+            .left-content figure img {
+              margin-left: 50px; /* fig1-2を右に50px移動 */
+            }
+
+            /* タイトル1のスタイル */
+            .left-content h1 {
+              font-size: 95px; /* 大きさを指定 */
+              line-height: 1.2; /* 行間を狭くする */
+              margin-top: 30px; /* 上に移動 */
+              padding-left: 30px; /* 左に余白を追加 */
+              letter-spacing: -1px; /* 文字の幅を狭くする */
+            }
+
+            /* 本文1のスタイル */
+            .left-content p {
+              font-size: 25px; /* 大きさを指定 */
+              line-height: 1.2; /* 行間を狭くする */
+              padding-left: 30px; /* 左に余白を追加 */
+              margin-top: 70px; /* 上にマージンを追加 */
+            }
+
+        }
+
+        /* スマートフォン版のスタイル */
+        @media (max-width: 767px) {
+            .pc-content {
+                display: none;
+            }
+            /* タイトル2のスタイル */
+            .mobile-content h1 {
+              font-size: 50px; /* 大きさを大きくする */
+              line-height: 1.2; /* 行間を狭くする */
+              padding-left: 10px; /* 左に余白を追加 */
+              margin-top: 50px; /* 上にマージンを追加 */
+              margin-bottom: : 20px; /* 下にマージンを追加 */
+              letter-spacing: -1px; /* 文字の幅を狭くする */
+            }
+
+            /* 本文2のスタイル */
+            .mobile-content p {
+              font-size: 15px; /* 大きさを小さくする */
+              line-height: 1.2; /* 行間を狭くする */
+              padding-left: 10px; /* 左に余白を追加 */
+              margin-top: 40px; /* 上にマージンを追加 */
+            }
+
+            /* スマホ版でfig2-1を左右の中央に配置 */
+            .mobile-content figure:nth-of-type(1) img {
+              display: block;
+              margin: 0 auto;
+            }
+
+            /* スマホ版でfig2-2を左に配置 */
+            .mobile-content figure:nth-of-type(2) {
+              float: left;
+              margin-right: 20px; /* 適切なマージンを追加 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- PC版のコンテンツ -->
+    <div class="pc-content">
+        <div class="left-content">
+            <h1>クレカ作るなら<br>これっしょ。</h1>
+            <figure>
+              <a href="https://card.americanexpress.com/d/multi-filters/?utm_mcid=&utm_source=google&utm_medium=cpc&utm_term=%2Bamex&utm_cmpid=20221000490&utm_adgid=152523865369&utm_tgtid=kwd-380412027066&utm_mt=p&utm_adid=660418477807&utm_dvc=c&utm_ntwk=g&utm_adpos=&utm_plcmnt=&utm_locphysid=9031931&utm_locintid=&utm_feeditemid=&utm_devicemdl=&utm_plcmnttgt=&utm_programname=brandnps&utm_cmp=BrandGen&utm_sl=&gclid=CjwKCAiA6KWvBhAREiwAFPZM7p5t2imhL5TaV47-iFXI_UH-INa1V1oxH8G3wswIkeknxhiu187X3xoCNLAQAvD_BwE">
+                  <img src="fig1-2.jpg" alt="Figure 1-2" width="100">
+              </a>
+            </figure>
+            <p>わかるで、クレカどれ作ってええか迷いすぎてめんどなるよな。悪いこと言わんからアメックスゴールドにしとき。年会費ちょい高いけど、かっこええやろこのゴールド。ほんで真面目な話 、今なら最大12万ポイントもらえるで。マイルに替えたらハワイまで2往復や。クレカなんて、要らんようになったら解約すればええ話やねんから騙されたと思ってこれ申し込んどき。</p>
+        </div>
+        <div class="right-content">
+            <figure>
+              <a href="https://card.americanexpress.com/d/multi-filters/?utm_mcid=&utm_source=google&utm_medium=cpc&utm_term=%2Bamex&utm_cmpid=20221000490&utm_adgid=152523865369&utm_tgtid=kwd-380412027066&utm_mt=p&utm_adid=660418477807&utm_dvc=c&utm_ntwk=g&utm_adpos=&utm_plcmnt=&utm_locphysid=9031931&utm_locintid=&utm_feeditemid=&utm_devicemdl=&utm_plcmnttgt=&utm_programname=brandnps&utm_cmp=BrandGen&utm_sl=&gclid=CjwKCAiA6KWvBhAREiwAFPZM7p5t2imhL5TaV47-iFXI_UH-INa1V1oxH8G3wswIkeknxhiu187X3xoCNLAQAvD_BwE">
+                <img src="fig1-1.jpg" alt="Figure 1-1" width="620">
+              </a>
+            </figure>
+        </div>
+    </div>
+
+    <!-- スマートフォン版のコンテンツ -->
+    <div class="mobile-content">
+        <h1>クレカ作るなら<br>これっしょ。</h1>
+        <figure>
+          <a href="https://card.americanexpress.com/d/multi-filters/?utm_mcid=&utm_source=google&utm_medium=cpc&utm_term=%2Bamex&utm_cmpid=20221000490&utm_adgid=152523865369&utm_tgtid=kwd-380412027066&utm_mt=p&utm_adid=660418477807&utm_dvc=c&utm_ntwk=g&utm_adpos=&utm_plcmnt=&utm_locphysid=9031931&utm_locintid=&utm_feeditemid=&utm_devicemdl=&utm_plcmnttgt=&utm_programname=brandnps&utm_cmp=BrandGen&utm_sl=&gclid=CjwKCAiA6KWvBhAREiwAFPZM7p5t2imhL5TaV47-iFXI_UH-INa1V1oxH8G3wswIkeknxhiu187X3xoCNLAQAvD_BwE">
+            <img src="fig2-1.jpg" alt="Figure 2-1" width="300">
+          </a>
+        </figure>
+        <p>わかるで、クレカどれ作ってええか迷いすぎてめんどなるよな。悪いこと言わんからアメックスゴールドにしとき。年会費ちょい高いけど、かっこええやろこのゴールド。ほんで真面目な話 、今なら最大12万ポイントもらえるで。マイルに替えたらハワイまで2往復や。クレカなんて、要らんようになったら解約すればええ話やねんから騙されたと思ってこれ申し込んどき。</p>
+        <figure>
+          <a href="https://card.americanexpress.com/d/multi-filters/?utm_mcid=&utm_source=google&utm_medium=cpc&utm_term=%2Bamex&utm_cmpid=20221000490&utm_adgid=152523865369&utm_tgtid=kwd-380412027066&utm_mt=p&utm_adid=660418477807&utm_dvc=c&utm_ntwk=g&utm_adpos=&utm_plcmnt=&utm_locphysid=9031931&utm_locintid=&utm_feeditemid=&utm_devicemdl=&utm_plcmnttgt=&utm_programname=brandnps&utm_cmp=BrandGen&utm_sl=&gclid=CjwKCAiA6KWvBhAREiwAFPZM7p5t2imhL5TaV47-iFXI_UH-INa1V1oxH8G3wswIkeknxhiu187X3xoCNLAQAvD_BwE">
+            <img src="fig2-2.jpg" alt="Figure 2-2" width="60">
+          </a>
+        </figure>
+    </div>
+</body>
+</html>
